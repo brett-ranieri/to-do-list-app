@@ -9,6 +9,7 @@ function newItem(){
         alert('You can\'t add nothing to the list. You have to write something!'); 
     } else {
         $('#list').append(li);
+        $('#input').val(''); // clears input after adding li to ul
     }
 
 // Cross Out List Item
@@ -31,6 +32,6 @@ function newItem(){
 
 // Sortable functionality
 
-   $('#list').sortable();
+    $('#list').sortable();
 
 }
