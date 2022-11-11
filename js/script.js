@@ -29,4 +29,8 @@ function newItem(){
         li.fadeOut(500); //used fadeOut animation instead of addClass("delete")
     })
 
+// Sortable functionality
+
+   $('#list').sortable();
+
 }
