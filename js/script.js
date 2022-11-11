@@ -1,3 +1,11 @@
+// Prevent Return Key Functionality
+
+$('#input').keypress(function(event){ //targets input field and looks for pressing of a key
+    if(event.which === 13) { // if the key pressed is enter (13 = ASCII code for enter key - check JS bookmarks)
+        event.preventDefault(); // prevent the default action (in this case was navigating back and refreshing page)
+    }
+});
+
 //Add New List Item
 
 function newItem(){
