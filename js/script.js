@@ -2,7 +2,8 @@
 
 $('#input').keypress(function(event){ //targets input field and looks for pressing of a key
     if(event.which === 13) { // if the key pressed is enter (13 = ASCII code for enter key - check JS bookmarks)
-        event.preventDefault(); // prevent the default action (in this case was navigating back and refreshing page)
+       event.preventDefault(); // prevent the default action (in this case was navigating back and refreshing page)
+        newItem(); // call the add new Item function to have return key function like a click
     }
 });
 
@@ -43,3 +44,4 @@ function newItem(){
     $('#list').sortable(); //jQuery method to make list sortable.
 
 }
+
