@@ -28,11 +28,12 @@ background-color: #cbd8cf;
 display: inline-block;
 background-color:#2f8d5e;
 color:#cbd8cf;
-border-radius: 3px;
+border-radius: 1px;
 border-color: #38423B;
 text-align:center;
 margin-top:2px;
 padding: 5px 15px;
+box-shadow: 5px 5px 3px #38423B;
 }
 
 #button:hover{
